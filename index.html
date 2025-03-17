@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natures Platter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-secoundry: #efebe3;
+        --color-primary: #179800;
+      }
+    </style>
+    <style>
+      * {
+        font-family: "Sora", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="bg-linear-to-b from white to-secondary">
+      <div class="container mx-auto w-11/12 overflow-hidden">
+        <nav
+          class="flex item-center lg:border-none border-b pb-4 border-primary justify-between mt-5"
+        >
+          <div>
+            <img
+              class="hidden md:block"
+              src="./assets/logo-header.png"
+              alt=""
+            />
+            <img
+              class="block md:hidden"
+              src="./assets/logo-header1.png"
+              alt=""
+            />
+          </div>
+          <div class="hidden lg:block">
+            <ul class="flex gap-4">
+              <li>
+                <a class="font-normal hover:text-primary text-xl" href="#"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a class="font-normal hover:text-primary text-xl" href="#"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a class="font-normal hover:text-primary text-xl" href="#"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="md:flex gap-3 items-center hidden">
+            <div class="flex gap-3">
+              <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+
+              <i class="fa-solid fa-cart-shopping text-2xl"></i>
+            </div>
+            <div class="flex gap-3">
+              <button
+                class="px-3 py-2 border-2 cursor-pointer hover:text-white rounded-xl hover:bg-primary duration-300 font-normal text-xl border-primary"
+              >
+                Login
+              </button>
+              <button
+                class="px-3 py-2 border-2 cursor-pointer hover:text-black text-white rounded-xl hover:bg-secoundry ease duration-300 font-normal bg-primary text-xl border-primary"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+          <div class="lg:hidden block">
+            <i class="fa-solid fa-list text-2xl"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
